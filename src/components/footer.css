@@ -1,0 +1,29 @@
+.footer-container {
+  width: 100%;
+
+  margin: auto;
+}
+
+.kotak {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+}
+
+.kotak > * {
+  margin: auto;
+  transition: 0.2s;
+}
+
+.kotak > *:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 3px lightblue;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer-container {
+    margin-bottom: 150px;
+  }
+}

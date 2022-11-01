@@ -1,0 +1,99 @@
+body {
+  background-image: url("../../public/bg_home.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+span {
+  color: #47b5ff;
+}
+
+.jumbotron {
+  height: 100vh;
+  display: flex;
+  margin: auto;
+}
+
+.text-container {
+  margin: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  /* IPAD/PHONE */
+  .profile-img {
+    margin-top: 100px;
+  }
+
+  .introduce {
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .jumbotron .greetings {
+    font-weight: 300;
+    font-size: 30px;
+  }
+
+  .jumbotron .name,
+  .typewritter {
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  .email-img {
+    margin: auto;
+    animation-name: upDown;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+
+  .contact-line {
+    border-bottom: 2px solid #47b5ff;
+    width: 20%;
+    margin: auto;
+  }
+
+  .button-submit:hover {
+    background-color: #06283d;
+    border: solid #06283d;
+    color: #47b5ff;
+  }
+
+  .button-submit {
+    background-color: #47b5ff;
+    border: solid #47b5ff;
+    color: #06283d;
+    padding: 6px 12px 6px 12px;
+    border-radius: 10px;
+    transition: all 0.1s;
+  }
+
+  .button-submit:active {
+    transform: scale(0.9);
+    box-sizing: border-box;
+    border: white solid 3px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .form-message {
+    height: 80vh;
+  }
+
+  .introduce {
+    height: 70vh;
+  }
+}
+
+@keyframes upDown {
+  from {
+    transform: translatey(7px);
+  }
+  to {
+    transform: translatey(-5px);
+  }
+}

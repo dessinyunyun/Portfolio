@@ -1,0 +1,23 @@
+.brandnya {
+  font-weight: 600;
+  font-size: 25px;
+  text-decoration: none;
+  color: #47b5ff !important;
+}
+
+li a {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+i {
+  font-size: 19px;
+}
+
+.navbar {
+  transition: all 0.4s;
+}
+
+.navbar.active {
+  background-color: rgba(6, 40, 61, 0.7);
+}
