@@ -20,12 +20,15 @@ span {
 
 @media screen and (max-width: 1023px) {
   /* IPAD/PHONE */
+
   .profile-img {
     margin-top: 100px;
   }
+}
 
+@media screen and (min-width: 500px) and (max-width: 1023px) {
   .introduce {
-    height: 100vh;
+    text-align: justify;
   }
 }
 

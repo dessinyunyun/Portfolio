@@ -15,9 +15,40 @@ i {
 }
 
 .navbar {
-  transition: all 0.4s;
+  /* transition: all 0.4s; */
+  text-align: center !important;
 }
 
 .navbar.active {
   background-color: rgba(6, 40, 61, 0.9);
+}
+
+@media screen and (max-width: 1023px) {
+  .nav-container {
+    padding: 0px;
+  }
+
+  .nav-container > .brandnya {
+    margin-left: 20px;
+  }
+  .nav-container > button {
+    margin-right: 20px;
+  }
+
+  .navbar {
+    background-color: rgba(6, 40, 61, 0.9);
+  }
+
+  .navbar-collapse {
+    background-color: rgba(6, 40, 61, 0.9);
+
+    width: 100%;
+
+    text-align: center;
+  }
+
+  ul {
+    height: 100vh;
+    margin-top: 20%;
+  }
 }

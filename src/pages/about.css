@@ -1,0 +1,13 @@
+@media screen and (max-width: 1023px) {
+  .about {
+    margin-top: 200px;
+  }
+
+  .first {
+    height: 100vh;
+  }
+}
+
+.about {
+  margin-top: 100px;
+}

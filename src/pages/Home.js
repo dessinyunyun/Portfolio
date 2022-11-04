@@ -9,11 +9,15 @@ const Home = () => {
 
   console.log(window.innerWidth);
 
-  React.useEffect(() => {
+  const fotoProfilePlace = () => {
     if (window.innerWidth < 1023) {
       setProfilImage(false);
     }
-  });
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("resize", fotoProfilePlace());
+  }, []);
 
   return (
     <div className="container">
@@ -39,8 +43,8 @@ const Home = () => {
       </div>
 
       <div class="introduce">
-        <div class="row">
-          <div class="col-sm-8">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-12">
             <h3 class="mb-5">
               Let Me <span>Introduce</span> My Self
             </h3>
@@ -57,7 +61,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div class="col-sm-4 d-flex">
+          <div class="col-lg-4 d-flex col-12">
             {" "}
             <div class={classProfilImage}></div>
           </div>
