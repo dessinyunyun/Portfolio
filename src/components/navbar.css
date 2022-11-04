@@ -19,7 +19,7 @@ i {
 }
 
 .navbar {
-  /* transition: all 0.4s; */
+  transition: all 0.4s;
   text-align: center !important;
 }
 

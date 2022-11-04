@@ -31,6 +31,7 @@ const Navbar = () => {
     if (window.innerWidth < 1023) {
       setNavBG("navbar navbar-expand-lg navbar-dark fixed-top");
     } else {
+      setNavBG("navbar navbar-expand-lg navbar-dark fixed-top");
       window.addEventListener("scroll", function () {
         this.window.scrollY > 20 ? setNavBG("navbar navbar-expand-lg navbar-dark fixed-top active") : setNavBG("navbar navbar-expand-lg navbar-dark fixed-top");
       });
