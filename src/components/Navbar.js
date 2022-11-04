@@ -61,7 +61,7 @@ const Navbar = () => {
               <ul class="navbar-nav ms-auto gap-5 ">
                 <li class="nav-item">
                   <Link class="nav-link active" aria-current="page" to="/">
-                    <p data-bs-toggle={phoneMode ? "collapse" : ""} data-bs-target={phoneMode ? "#navbarNav" : ""}>
+                    <p data-bs-toggle={phoneMode ? "collapse" : ""} data-bs-target={phoneMode ? "#navbarNav" : ""} className="m-auto">
                       <i class="fi fi-rr-home"></i> Home
                     </p>
                   </Link>

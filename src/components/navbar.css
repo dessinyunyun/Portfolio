@@ -5,6 +5,10 @@
   color: #47b5ff !important;
 }
 
+li p {
+  margin: auto;
+}
+
 li a {
   font-weight: 400;
   font-size: 25px;
