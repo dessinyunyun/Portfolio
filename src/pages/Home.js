@@ -47,7 +47,7 @@ const Home = () => {
 
       <div class="introduce">
         <div class="row justify-content-center">
-          <div class="col-lg-7 col-12 d-flex">
+          <div class="col-lg-7 d-flex">
             <div class="text-home m-auto">
               <h3 class="mb-5 ">
                 Let Me <span>Introduce</span> My Self
@@ -66,13 +66,13 @@ const Home = () => {
             </div>
           </div>
 
-          <div class="col-lg-5 col-12 ">
+          <div class="col-lg-5  player">
             {" "}
-            <div className="player d-flex ">
+            <div className="player  ">
               {/* <img src="animasihome.gif" alt="" /> */}
               {/* <Lottie loop animationData="https://assets5.lottiefiles.com/packages/lf20_es4p9zph.json" play style={{ width: 150, height: 150 }} /> */}
               <div class="lottie m-auto">
-                <Player src="https://assets5.lottiefiles.com/packages/lf20_qdmxvg00.json" className="player m-auto" background="transparent" speed={1} style={{ width: "350px", height: "350px" }} loop controls autoplay />
+                <Player src="https://assets5.lottiefiles.com/packages/lf20_qdmxvg00.json" className="player m-auto" background="transparent" speed={1} style={{ width: "100%", height: "100%" }} loop controls autoplay />
               </div>
             </div>
           </div>

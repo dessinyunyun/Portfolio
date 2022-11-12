@@ -8,6 +8,8 @@ body {
   font-family: "Inter";
   color: white;
   font-size: 19px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 a {

@@ -1,11 +1,5 @@
-@media screen and (max-width: 1023px) {
-  .about {
-    margin-top: 200px;
-  }
-
-  .first {
-    height: 100vh;
-  }
+.about-text h1 {
+  text-align: start;
 }
 
 .about {
@@ -18,4 +12,18 @@
 
 .about-text p {
   text-align: justify;
+}
+
+@media screen and (max-width: 1023px) {
+  .about {
+    margin-top: 200px;
+  }
+
+  .first {
+    height: 100vh;
+  }
+
+  .about-text h1 {
+    text-align: center;
+  }
 }
