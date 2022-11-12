@@ -16,7 +16,7 @@ const About = () => {
           </div>
           <div class="col-sm-5">
             {/* <img src="animasi.gif" alt="" width={"100%"} /> */}
-            <Player src="https://assets3.lottiefiles.com/packages/lf20_es4p9zph.json" className="player" background="transparent" speed={1} style={{ width: "400px", height: "400px" }} loop controls autoplay />
+            <Player src="https://assets3.lottiefiles.com/packages/lf20_es4p9zph.json" className="player" background="transparent" speed={1} style={{ width: "350px", height: "350px" }} loop controls autoplay />
           </div>
         </div>
       </div>

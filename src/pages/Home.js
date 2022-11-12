@@ -66,13 +66,13 @@ const Home = () => {
             </div>
           </div>
 
-          <div class="col-lg-5 col-12">
+          <div class="col-lg-5 col-12 ">
             {" "}
-            <div className="player m-auto">
+            <div className="player d-flex ">
               {/* <img src="animasihome.gif" alt="" /> */}
               {/* <Lottie loop animationData="https://assets5.lottiefiles.com/packages/lf20_es4p9zph.json" play style={{ width: 150, height: 150 }} /> */}
-              <div class="lottie">
-                <Player src="https://assets5.lottiefiles.com/packages/lf20_qdmxvg00.json" className="player m-auto" background="transparent" speed={1} style={{ width: "380px", height: "380px" }} loop controls autoplay />
+              <div class="lottie m-auto">
+                <Player src="https://assets5.lottiefiles.com/packages/lf20_qdmxvg00.json" className="player m-auto" background="transparent" speed={1} style={{ width: "350px", height: "350px" }} loop controls autoplay />
               </div>
             </div>
           </div>

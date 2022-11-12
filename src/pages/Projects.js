@@ -22,8 +22,8 @@ const NewProjects = () => {
 
   const projectMap = ProjectData.map((pr) => {
     return (
-      <div class="col-sm-4 mt-3">
-        <div class="portofolio-container ">
+      <div class="col-sm-4 mt-3 mb-3">
+        <div class="portofolio-container">
           <div class="header">
             <div class="img-portofolio">
               <img src={`${pr.image}`} alt="" />
@@ -34,8 +34,8 @@ const NewProjects = () => {
           </div>
           <p className="mt-3 mb-4 textnya">{pr.text}</p>
 
-          <div class="link ">
-            <a className="btn btn-primary" target="-blank" href={pr.link}>
+          <div class="link">
+            <a className="btn btn-link" target="-blank" href={pr.link}>
               Kunjungi
             </a>
           </div>
