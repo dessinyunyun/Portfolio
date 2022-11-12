@@ -4,6 +4,19 @@ body {
   background-size: cover;
 }
 
+#lottie,
+.player {
+  width: 100%;
+}
+
+.text-home {
+  flex-direction: column;
+}
+
+.text-home p {
+  text-align: justify;
+}
+
 span {
   color: #47b5ff;
 }

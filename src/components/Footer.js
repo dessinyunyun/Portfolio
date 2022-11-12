@@ -2,21 +2,21 @@ import React from "react";
 import "./footer.css";
 
 const Footer = () => {
-  const [profilImage, setProfilImage] = React.useState(true);
+  // const [profilImage, setProfilImage] = React.useState(true);
 
-  let classProfilImage = profilImage ? "profile-img" : "";
+  // let classProfilImage = profilImage ? "profile-img" : "";
 
   console.log(window.innerWidth);
 
   React.useEffect(() => {
-    if (window.innerWidth > 1023) {
-      setProfilImage(false);
-    }
+    // if (window.innerWidth > 1023) {
+    //   setProfilImage(false);
+    // }
   }, window.innerWidth);
 
   return (
-    <div className="footer-container py-5">
-      <div class={classProfilImage}></div>
+    <footer className="footer-container py-5">
+      {/* <div class={classProfilImage}></div> */}
 
       <h4 className="text-center mb-4 mt-5">
         You can <span>Find Me</span> on
@@ -38,7 +38,7 @@ const Footer = () => {
           <img src="socialmedia/facebook.png" alt="" />
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

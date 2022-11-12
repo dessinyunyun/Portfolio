@@ -1,6 +1,9 @@
 import React from "react";
 import "./home.css";
 import Typewriter from "typewriter-effect";
+import Lottie from "react-lottie-player";
+import { Player } from "@lottiefiles/react-lottie-player";
+// import lottieJson from './my-lottie.json'
 
 const Home = () => {
   const [profilImage, setProfilImage] = React.useState(true);
@@ -44,26 +47,34 @@ const Home = () => {
 
       <div class="introduce">
         <div class="row justify-content-center">
-          <div class="col-lg-8 col-12">
-            <h3 class="mb-5">
-              Let Me <span>Introduce</span> My Self
-            </h3>
-            <p>
-              I found myself getting interested in <span>web programming</span> after trying many things to find out what <span>my interest</span> was.
-            </p>
+          <div class="col-lg-7 col-12 d-flex">
+            <div class="text-home m-auto">
+              <h3 class="mb-5 ">
+                Let Me <span>Introduce</span> My Self
+              </h3>
+              <p>
+                I found myself getting interested in <span>web programming</span> after trying many things to find out what <span>my interest</span> was.
+              </p>
 
-            <p>
-              Web development and coding processes <span>challenge</span> me to always <span>upgrade</span> and <span>improve</span> my competence and expertise in related fields.
-            </p>
+              <p>
+                Web development and coding processes <span>challenge</span> me to always <span>upgrade</span> and <span>improve</span> my competence and expertise in related fields.
+              </p>
 
-            <p>
-              In developing Web Application, I usually use <span>Mern Stack</span> and <span>Codeiginiter</span>.{" "}
-            </p>
+              <p>
+                In developing Web Application, I usually use <span>Mern Stack</span> and <span>Codeiginiter</span>.{" "}
+              </p>
+            </div>
           </div>
 
-          <div class="col-lg-4 d-flex col-12">
+          <div class="col-lg-5 col-12">
             {" "}
-            <div class={classProfilImage}></div>
+            <div className="player m-auto">
+              {/* <img src="animasihome.gif" alt="" /> */}
+              {/* <Lottie loop animationData="https://assets5.lottiefiles.com/packages/lf20_es4p9zph.json" play style={{ width: 150, height: 150 }} /> */}
+              <div class="lottie">
+                <Player src="https://assets5.lottiefiles.com/packages/lf20_qdmxvg00.json" className="player m-auto" background="transparent" speed={1} style={{ width: "380px", height: "380px" }} loop controls autoplay />
+              </div>
+            </div>
           </div>
         </div>
       </div>

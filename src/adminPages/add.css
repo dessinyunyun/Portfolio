@@ -1,0 +1,67 @@
+.add-container {
+  margin-top: 150px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+input,
+textarea {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid rgba(15, 132, 204, 0.5);
+  color: white;
+  padding: 5px;
+  width: 100%;
+}
+
+textarea {
+  height: 200px;
+}
+
+input:focus,
+textarea:focus {
+  /* border: 1px solid #47b5ff !important; */
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(177, 177, 177);
+}
+
+.upload-image {
+  cursor: pointer;
+  font-size: 18px;
+  background-color: rgba(15, 132, 204, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.button-notactive {
+  cursor: inherit !important;
+  background-color: rgba(15, 132, 204, 0.3);
+  color: white;
+}
+
+.button-notactive:hover {
+  color: white;
+}
+
+.bingkai-gambar {
+  border: 2px solid rgba(15, 132, 204, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.imagePreviews img {
+  width: 150px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.caption-image {
+  color: rgb(177, 177, 177);
+  font-size: 13px;
+}

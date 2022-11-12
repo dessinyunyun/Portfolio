@@ -38,6 +38,21 @@ const Navbar = () => {
     }
   };
 
+  const downloadResume = () => {
+    // using Java Script method to get PDF file
+    fetch("CVDESSIANWAR.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "CVDESSIANWAR.pdf";
+        alink.click();
+      });
+    });
+  };
+
   React.useEffect(() => {
     navBgSet();
     if (window.innerWidth < 1024) {
@@ -49,7 +64,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div class="header">
+      <header class="header">
         <nav class={navBG}>
           <div class="container nav-container">
             <a class="brandnya" href="#">
@@ -77,7 +92,7 @@ const Navbar = () => {
                 </li>
 
                 <li class="nav-item">
-                  <Link class="nav-link" to="/about">
+                  <Link class="nav-link" to="/projects">
                     <p data-bs-toggle={phoneMode ? "collapse" : ""} data-bs-target={phoneMode ? "#navbarNav" : ""}>
                       <i class="fi fi-rr-computer"></i> Projects
                     </p>
@@ -85,7 +100,7 @@ const Navbar = () => {
                 </li>
 
                 <li class="nav-item">
-                  <Link class="nav-link" to="/about">
+                  <Link class="nav-link" onClick={downloadResume}>
                     <p data-bs-toggle={phoneMode ? "collapse" : ""} data-bs-target={phoneMode ? "#navbarNav" : ""}>
                       <i class="fi fi-rr-document"></i> Resume
                     </p>
@@ -95,7 +110,7 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-      </div>
+      </header>
     </div>
   );
 };
