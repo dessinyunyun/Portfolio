@@ -14,6 +14,34 @@
   text-align: justify;
 }
 
+.skill-img{
+  width: 100%;
+  height: 130px;
+  /* border: 1px solid white; */
+  background-color: rgba(71, 181, 255, 0.01);
+  display: flex;
+  box-shadow: rgba(71, 181, 255, 0.35) 0px 2px 3px 0px, rgba(71, 181, 255, 0.35) 0px 2px 8px 0px;
+  padding: 35px;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+.skill-img:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(71, 181, 255, 0.35) 0px 2px 7px 0px, rgba(71, 181, 255, 0.35) 0px 2px 12px 0px;
+}
+
+.skill-img img{
+  margin: auto;
+  width: 30%;
+}
+
+
+
 @media screen and (max-width: 1023px) {
   .about {
     margin-top: 200px;
@@ -25,5 +53,10 @@
 
   .about-text h1 {
     text-align: center;
+  }
+
+  .skill-img img{
+    margin: auto;
+    width: 50%;
   }
 }

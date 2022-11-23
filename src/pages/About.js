@@ -1,8 +1,19 @@
 import React from "react";
 import "./about.css";
 import { Player } from "@lottiefiles/react-lottie-player";
+import SkillData from "./SkillData"
 
 const About = () => {
+
+const skill = SkillData.map(skill => {
+ return(  <div class="col-sm-3 col-6 p-3">
+  <div class="skill-img">
+
+          <img src={skill.image} alt="" />
+  </div>
+  </div>)
+})
+
   return (
     <div className="container about">
       <div class="first">
@@ -25,8 +36,8 @@ const About = () => {
         <h2>
           My <span>Skill</span>{" "}
         </h2>
-        <div class="row">
-          <div class="col-12"></div>
+        <div class="row mt-5 justify-content-center">
+      {skill}
         </div>
       </div>
     </div>
