@@ -32,7 +32,7 @@ const NewProjects = () => {
               <aside>{pr.judul}</aside>{" "}
             </h2>
           </div>
-          <p className="mt-3 mb-4 textnya">{pr.text}</p>
+          <p className="mt-3 mb-4 textnya fs-6">{pr.text}</p>
 
           <div class="link">
             <a className="btn btn-link" target="-blank" href={pr.link}>
